@@ -8,7 +8,6 @@ $dv-primary-color-2: #797A80;
 $dv-primary-color-3: #DCDEDE;
 //Backgrounds: Admin System
 $dv-primary-color-4: #EFEFEF;
-
 //Backgrounds: Selected; Highlight Item
 //Text: Clickable Link
 $dv-secondary-color-1: #00A273;
@@ -31,18 +30,14 @@ $dv-font-size: 16px;
 // Base font size across all components
 // Default: 14px
 $font-size: $dv-font-size;
-
 // $font-family: "Segoe UI";
 // $font-family	inherit	Font family across all components.
 // $font-family-monospace	Consolas, "Ubuntu Mono", "Lucida Console", "Courier New", monospace	Font family for monospaced text. Used for styling the code.
 $line-height: (22 / 16);//	(20 / 14)	Line height used along with $font-size.
-
-// Border radius for all components.
-// 2px
-$border-radius: $dv-border-radius;
-//$accent: $dv-primary-color-1;	 //#ff6358	The color that focuses the user attention.
+$border-radius: $dv-border-radius;// 2px Border radius for all components.
+$accent: $dv-primary-color-1;	 //#ff6358	The color that focuses the user attention.
 // Used for primary buttons and for elements of primary importance across the theme.
-//$accent-contrast: #ffffff;// #ffffff	The color used along with the accent color denoted by $accent.
+$accent-contrast: #ffffff;// #ffffff	The color used along with the accent color denoted by $accent.
 // Used to provide contrast between the background and foreground colors.
 $base-text: $dv-primary-color-1;//#656565	The text color of the components' chrome area.
 // $base-bg	 #f6f6f6	The background of the components' chrome area.
@@ -60,7 +55,6 @@ $hovered-border: $dv-primary-color-2;	//rgba( black, .15 )	The border color of h
 // $warning	 #fdce3e	The color for warning messages and states.
 // $success	 #5ec232	The color for success messages and states.
 // $info	 #3e80ed	The color for informational messages and states.
-
 // $button-text	$base-text	The text color of the buttons.
 // $button-bg	$base-bg	The background of the buttons.
 // $button-border	$base-border	The border color of the buttons.
@@ -74,7 +68,6 @@ $hovered-border: $dv-primary-color-2;	//rgba( black, .15 )	The border color of h
 // $button-pressed-border	$selected-border	The border color of pressed buttons.
 // $button-pressed-gradient	none	The background gradient of pressed buttons.
 // $button-focused-shadow	0 3px 4px 0 rgba(0, 0, 0, .06)	The shadow of focused buttons.
-
 // $toolbar-padding-x	$padding-x	The horizontal padding of the container.
 // $toolbar-padding-y	$padding-x	The vertical padding of the container.
 
@@ -83,9 +76,63 @@ $border-color: $dv-primary-color-2;
 $text-color: $dv-primary-color-1;
 // Place holder color
 $input-padding-y: 8px;
-$primary-button-bg: $dv-primary-color-1;
+//$primary-button-bg: $dv-primary-color-1;
 
 // my edit ::placeholder color in input/_theme.scss
-$placeholder-color: $dv-primary-color-2;
+$dv-placeholder-color: $dv-primary-color-2;
+// my edit: ::selection color in validator/_theme.scss
+$dv-validator-color: $dv-primary-color-2;
+$dv-validator-font-size: 14px !important;
+
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('../fonts/notosans.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/notosans.woff') format('woff'), /* Pretty Modern Browsers */
+        url('../fonts/notosans.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('../fonts/notosansb.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/notosansb.woff') format('woff'), /* Pretty Modern Browsers */
+        url('../fonts/notosansb.ttf')  format('truetype'); /* Safari, Android, iOS */
+    font-weight: bold;
+        
+}
+
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('../fonts/notosansbi.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/notosansbi.woff') format('woff'), /* Pretty Modern Browsers */
+        url('../fonts/notosansbi.ttf')  format('truetype'); /* Safari, Android, iOS */
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('../fonts/notosansi.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/notosansi.woff') format('woff'), /* Pretty Modern Browsers */
+        url('../fonts/notosansi.ttf')  format('truetype'); /* Safari, Android, iOS */
+    font-style: italic;
+}
+
+body {
+    font-family: "Segoe UI";
+    font-size: 16pt;
+}
+
+h1 {
+    font-family: "Segoe UI";
+    font-weight: Bold;
+    font-size: 32pt;
+    text-transform: capitalize;
+}
+
+h2 {
+    font-family: "Segoe UI";
+    font-size: 16pt;
+    text-transform: uppercase;
+}
 
 @import "node_modules/@progress/kendo-theme-default/scss/all";
