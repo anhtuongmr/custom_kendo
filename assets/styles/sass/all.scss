@@ -1,0 +1,91 @@
+//Backgrounds: Primary Buttons; Data Table Rows; Normal Icons
+//Text: Secondary Button; Title, Body
+$dv-primary-color-1: #38393B;
+//Backgrounds: Textbox border
+//Text: Hint Text
+$dv-primary-color-2: #797A80;
+//Backgrounds: Secondary Button, Tag, Selected Textbox
+$dv-primary-color-3: #DCDEDE;
+//Backgrounds: Admin System
+$dv-primary-color-4: #EFEFEF;
+
+//Backgrounds: Selected; Highlight Item
+//Text: Clickable Link
+$dv-secondary-color-1: #00A273;
+//
+$dv-secondary-color-2: #CBDAD6;
+//
+$dv-secondary-color-3: #006080;
+//
+$dv-secondary-color-4: #474D66;
+//Backgrounds: Selected
+//Text: Clickable Link
+$dv-secondary-color-5: #FFFFFF;
+//Text: Required Field, Alert Message
+$dv-secondary-color-6: #E51E25;
+//
+$dv-border-radius: 4px;
+//
+$dv-font-size: 16px;
+
+// Base font size across all components
+// Default: 14px
+$font-size: $dv-font-size;
+
+// $font-family: "Segoe UI";
+// $font-family	inherit	Font family across all components.
+// $font-family-monospace	Consolas, "Ubuntu Mono", "Lucida Console", "Courier New", monospace	Font family for monospaced text. Used for styling the code.
+$line-height: (22 / 16);//	(20 / 14)	Line height used along with $font-size.
+
+// Border radius for all components.
+// 2px
+$border-radius: $dv-border-radius;
+//$accent: $dv-primary-color-1;	 //#ff6358	The color that focuses the user attention.
+// Used for primary buttons and for elements of primary importance across the theme.
+//$accent-contrast: #ffffff;// #ffffff	The color used along with the accent color denoted by $accent.
+// Used to provide contrast between the background and foreground colors.
+$base-text: $dv-primary-color-1;//#656565	The text color of the components' chrome area.
+// $base-bg	 #f6f6f6	The background of the components' chrome area.
+$base-border: $dv-primary-color-2;//	rgba( black, .08 )	The border color of the components' chrome area.
+// $base-gradient	$base-bg, darken( $base-bg, 2% )	The gradient background of the components' chrome area.
+$hovered-text: $dv-primary-color-2;	 //	The text color of hovered items.
+// $hovered-bg	 #ededed	The background of hovered items.
+$hovered-border: $dv-primary-color-2;	//rgba( black, .15 )	The border color of hovered items.
+// $hovered-gradient	$hovered-bg, darken( $hovered-bg, 2% )	The gradient background of hovered items.
+//$selected-text: $dv-primary-color-1;	//$accent-contrast	The text color of selected items.
+//$selected-bg: $dv-primary-color-3;	//$accent	The background of selected items.
+// $selected-border	rgba( black, .1 )	The border color of selected items.
+// $selected-gradient	none	The gradient background of selected items.
+// $error	 #f5503e	The color for error messages and states.
+// $warning	 #fdce3e	The color for warning messages and states.
+// $success	 #5ec232	The color for success messages and states.
+// $info	 #3e80ed	The color for informational messages and states.
+
+// $button-text	$base-text	The text color of the buttons.
+// $button-bg	$base-bg	The background of the buttons.
+// $button-border	$base-border	The border color of the buttons.
+// $button-gradient	$base-gradient	The background gradient of the buttons.
+// $button-hovered-text	$hovered-text	The text color of hovered buttons.
+// $button-hovered-bg	$hovered-bg	The background of hovered buttons.
+// $button-hovered-border	$hovered-border	The border color of hovered buttons.
+// $button-hovered-gradient	$hovered-gradient	The background gradient of hovered buttons.
+// $button-pressed-text	$selected-text	The text color of pressed buttons.
+// $button-pressed-bg	$selected-bg	The background color of pressed buttons.
+// $button-pressed-border	$selected-border	The border color of pressed buttons.
+// $button-pressed-gradient	none	The background gradient of pressed buttons.
+// $button-focused-shadow	0 3px 4px 0 rgba(0, 0, 0, .06)	The shadow of focused buttons.
+
+// $toolbar-padding-x	$padding-x	The horizontal padding of the container.
+// $toolbar-padding-y	$padding-x	The vertical padding of the container.
+
+// Border color
+$border-color: $dv-primary-color-2;
+$text-color: $dv-primary-color-1;
+// Place holder color
+$input-padding-y: 8px;
+$primary-button-bg: $dv-primary-color-1;
+
+// my edit ::placeholder color in input/_theme.scss
+$placeholder-color: $dv-primary-color-2;
+
+@import "node_modules/@progress/kendo-theme-default/scss/all";
