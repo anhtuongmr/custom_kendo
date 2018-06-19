@@ -1,32 +1,30 @@
-//Backgrounds: Primary Buttons; Data Table Rows; Normal Icons
-//Text: Secondary Button; Title, Body
 $dv-primary-color-1: #38393B;
-//Backgrounds: Textbox border
-//Text: Hint Text
 $dv-primary-color-2: #797A80;
-//Backgrounds: Secondary Button, Tag, Selected Textbox
 $dv-primary-color-3: #DCDEDE;
-//Backgrounds: Admin System
 $dv-primary-color-4: #EFEFEF;
-//Backgrounds: Selected; Highlight Item
-//Text: Clickable Link
 $dv-secondary-color-1: #00A273;
-//
 $dv-secondary-color-2: #CBDAD6;
-//
 $dv-secondary-color-3: #006080;
-//
 $dv-secondary-color-4: #474D66;
-//Backgrounds: Selected
-//Text: Clickable Link
 $dv-secondary-color-5: #FFFFFF;
-//Text: Required Field, Alert Message
 $dv-secondary-color-6: #E51E25;
-//
-$dv-border-radius: 4px;
-//
-$dv-font-size: 16px;
 
+$dv-font-family: "Segoe UI";
+$dv-font-weight-h1: bold;
+$dv-font-size-h1: 32pt;
+$dv-text-transform-h1: capitalize;
+$dv-font-size-h2: 16pt;
+$dv-text-transform-h2: uppercase;
+$dv-font-size-body: 16px;
+
+$dv-checkbox-distance-with-text: 8px;
+
+$dv-padding-x-tag: 12px;
+$dv-padding-y-tag: 5px;
+$dv-border-radius-tag: 16px;
+
+$dv-border-radius: 4px;
+$dv-font-size: 16px;
 // Base font size across all components
 // Default: 14px
 $font-size: $dv-font-size;
@@ -71,15 +69,14 @@ $hovered-border: $dv-primary-color-2;	//rgba( black, .15 )	The border color of h
 // $toolbar-padding-x	$padding-x	The horizontal padding of the container.
 // $toolbar-padding-y	$padding-x	The vertical padding of the container.
 
-// Border color
 $border-color: $dv-primary-color-2;
 $text-color: $dv-primary-color-1;
-// Place holder color
 $input-padding-y: 8px;
-//$primary-button-bg: $dv-primary-color-1;
-
-// my edit ::placeholder color in input/_theme.scss
 $dv-placeholder-color: $dv-primary-color-2;
+$checkbox-checked-border: $dv-secondary-color-1;
+$checkbox-checked-bg: $dv-secondary-color-1;
+$checkbox-radius: 2px;
+$checkbox-size: 14px;
 // my edit: ::selection color in validator/_theme.scss
 $dv-validator-color: $dv-primary-color-2;
 $dv-validator-font-size: 14px !important;
@@ -118,21 +115,28 @@ $dv-validator-font-size: 14px !important;
 }
 
 body {
-    font-family: "Segoe UI";
-    font-size: 16pt;
+    font-family: $dv-font-family;
+    font-size: $dv-font-size-body;
 }
 
 h1 {
-    font-family: "Segoe UI";
-    font-weight: Bold;
-    font-size: 32pt;
-    text-transform: capitalize;
+    font-family: $dv-font-family;
+    font-weight: $dv-font-weight-h1;
+    font-size: $dv-font-size-h1;
+    text-transform: $dv-text-transform-h1;
 }
 
 h2 {
-    font-family: "Segoe UI";
-    font-size: 16pt;
-    text-transform: uppercase;
+    font-family: $dv-font-family;
+    font-size: $dv-font-size-h2;
+    text-transform: $dv-text-transform-h2;
+}
+
+.k-multiselect-wrap .k-clear-value{
+    padding-bottom: 4px;
 }
 
 @import "node_modules/@progress/kendo-theme-default/scss/all";
+
+// change input/_layout.scss
+// change mutiselect/_form.scss

@@ -24,11 +24,11 @@
 
 body {
   font-family: "Segoe UI";
-  font-size: 16pt; }
+  font-size: 16px; }
 
 h1 {
   font-family: "Segoe UI";
-  font-weight: Bold;
+  font-weight: bold;
   font-size: 32pt;
   text-transform: capitalize; }
 
@@ -36,6 +36,9 @@ h2 {
   font-family: "Segoe UI";
   font-size: 16pt;
   text-transform: uppercase; }
+
+.k-multiselect-wrap .k-clear-value {
+  padding-bottom: 4px; }
 
 .k-button[disabled],
 [disabled] .k-button {
@@ -1101,7 +1104,6 @@ kendo-sortable {
   .k-multiselect-wrap .k-input,
   .k-numeric-wrap .k-input {
     padding: 8px 8px;
-    height: calc( 8px + 1.375em);
     box-sizing: border-box;
     border: 0;
     outline: 0;
@@ -8309,9 +8311,9 @@ th.k-sorted {
 .k-checkbox-label,
 .k-radio-label {
   margin: 0;
-  padding-left: 20px;
+  padding-left: 22px;
   min-height: 16px;
-  line-height: 17px;
+  line-height: 15px;
   vertical-align: text-top;
   display: inline-flex;
   align-items: flex-start;
@@ -8319,12 +8321,12 @@ th.k-sorted {
   cursor: pointer; }
   .k-checkbox-label .k-ripple,
   .k-radio-label .k-ripple {
-    top: 8px;
-    left: 8px;
+    top: 7px;
+    left: 7px;
     right: auto;
     bottom: auto;
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     transform: translate(-50%, -50%);
     border-radius: 50%; }
   .k-checkbox-label .k-ripple-blob,
@@ -8345,13 +8347,13 @@ th.k-sorted {
   [dir='rtl']
   .k-radio-label {
     padding-left: 0;
-    padding-right: 20px; }
+    padding-right: 18px; }
 
 .k-checkbox-label::before,
 .k-checkbox-label::after,
 .k-radio-label::before,
 .k-radio-label::after {
-  font-size: 16px;
+  font-size: 9.8px;
   font-family: "WebComponentsIcons", monospace;
   box-sizing: border-box;
   text-align: center;
@@ -8379,50 +8381,51 @@ th.k-sorted {
 .k-checkbox-label::before,
 .k-radio-label::before {
   content: "";
-  width: 16px;
-  height: 16px;
+  width: 14px;
+  height: 14px;
   border-width: 1px;
   border-style: solid; }
 
 .k-checkbox-label::before {
-  border-radius: 4px; }
+  border-radius: 2px;
+  margin-top: -1px; }
 
 .k-radio-label::before {
   border-radius: 50%; }
 
 .k-checkbox-label::after {
   content: "\e118";
-  width: 16px;
-  height: 16px;
+  width: 14px;
+  height: 14px;
   transform: scale(0); }
 
 .k-checkbox:checked + .k-checkbox-label::after {
-  border-radius: 4px;
+  border-radius: 2px;
   transform: scale(1); }
 
 .k-checkbox:indeterminate + .k-checkbox-label::after {
   content: "";
   transform: scale(1);
-  width: 8px;
-  height: 8px;
-  top: 4px;
-  left: 4px; }
+  width: 7px;
+  height: 7px;
+  top: 3.5px;
+  left: 3.5px; }
 
 .k-radio-label::after {
   content: "";
-  width: 8px;
-  height: 8px;
+  width: 7px;
+  height: 7px;
   border-radius: 50%;
   position: absolute;
-  top: 4px;
-  left: 4px;
+  top: 3.5px;
+  left: 3.5px;
   transform: scale(0); }
 
 .k-radio:checked + .k-radio-label::after {
   transform: scale(1); }
 
 .k-radio-list .k-radio-label {
-  line-height: 20px; }
+  line-height: 17.5px; }
 
 .k-fieldset {
   margin: 30px;
@@ -8595,8 +8598,8 @@ th.k-sorted {
   box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.06); }
 
 .k-radio:checked + .k-radio-label::before {
-  border-color: #38393B;
-  background-color: #38393B; }
+  border-color: #00A273;
+  background-color: #00A273; }
 
 .k-radio:checked + .k-radio-label::after {
   background-color: #ffffff; }
@@ -8616,14 +8619,14 @@ th.k-sorted {
   border-color: #797A80; }
 
 .k-checkbox:indeterminate + .k-checkbox-label::after {
-  background-color: #38393B; }
+  background-color: #00A273; }
 
 .k-checkbox:focus + .k-checkbox-label::before {
   box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.06); }
 
 .k-checkbox:checked + .k-checkbox-label::before {
-  border-color: #38393B;
-  background-color: #38393B; }
+  border-color: #00A273;
+  background-color: #00A273; }
 
 .k-checkbox:checked + .k-checkbox-label::after {
   color: #ffffff; }
@@ -8667,7 +8670,7 @@ fieldset legend {
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.03), 0 4px 5px 0 rgba(0, 0, 0, 0.04);
     margin: 0 0 6px; }
   .k-popup-dropdowntree .k-check-all .k-checkbox-label {
-    padding-left: calc( 20px + 8px); }
+    padding-left: calc( 18px + 8px); }
   .k-popup-dropdowntree .k-check-all {
     padding: 6px 6px 0; }
   .k-popup-dropdowntree .k-list-filter .k-check-all {
@@ -8677,7 +8680,7 @@ fieldset legend {
   .k-popup-dropdowntree.k-rtl .k-check-all .k-checkbox-label,
   [dir='rtl'] .k-popup-dropdowntree .k-check-all .k-checkbox-label {
     padding-left: 0;
-    padding-right: calc( 20px + 8px); }
+    padding-right: calc( 18px + 8px); }
 
 html .k-upload {
   position: relative; }
@@ -9514,14 +9517,15 @@ table.k-editor {
     float: left; }
   .k-multiselect-wrap .k-button {
     min-height: calc( 1.375em + 4px);
-    padding: 1px 4px;
+    padding: 5px 12px;
     margin: 2px 0 0 2px;
     cursor: default;
     display: inline-flex;
     flex-direction: row;
     align-items: center;
     line-height: inherit;
-    white-space: normal; }
+    white-space: normal;
+    border-radius: 16px; }
     .k-multiselect-wrap .k-button .k-select {
       display: flex;
       cursor: pointer;
